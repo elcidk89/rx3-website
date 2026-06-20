@@ -68,12 +68,12 @@
             <h2 class="contact-intro">Start Your Journey</h2>
             <p class="section-body" style="max-width: 100%;">Fill out the form and someone will respond to your inquiry shortly. Or reach us directly at <a href="mailto:sales@chiselandgroovestudio.com" style="text-decoration: underline;">sales@chiselandgroovestudio.com</a>.</p>
 
-            <div class="form-success" data-fs-success>
+            <div class="form-success" id="formSuccess" data-fs-success>
               Thank you! Someone will respond to your inquiry shortly.
             </div>
             <div class="form-error" data-fs-error></div>
 
-            <form class="contact-form" id="contactForm">
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/xeewylep" method="POST">
               <div class="form-group">
                 <label class="form-label" for="name">Name</label>
                 <input class="form-input" type="text" id="name" name="name" placeholder="Your name" autocomplete="name" data-fs-field>
@@ -155,11 +155,7 @@
     </div>
   </footer>
 
-  <script>
-    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-    formspree('initForm', { formElement: '#contactForm', formId: 'xeewylep' });
-  </script>
-  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+  <script src="js/contact.js" defer></script>
   <script src="js/nav.js" defer></script>
 </body>
 </html>

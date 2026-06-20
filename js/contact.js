@@ -25,12 +25,12 @@
       } else {
         submit.disabled = false;
         submit.textContent = 'Submit';
-        alert('There was a problem sending your message. Please email us directly at sales@chiselandgroovenc.com');
+        alert('There was a problem sending your message. Please email us directly at sales@chiselandgroovestudio.com');
       }
     } catch (err) {
       submit.disabled = false;
       submit.textContent = 'Submit';
-      alert('There was a problem sending your message. Please email us directly at sales@chiselandgroovenc.com');
+      alert('There was a problem sending your message. Please email us directly at sales@chiselandgroovestudio.com');
     }
   });
 })();
