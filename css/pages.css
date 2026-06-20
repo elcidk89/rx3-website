@@ -96,10 +96,7 @@
 }
 
 /* ── ABOUT PAGE ── */
-.about-hero {
-  background-image: url('../assets/images/about-owner.jpg');
-  background-position: center top;
-}
+.about-hero {}
 
 .about-section {
   background-color: var(--cg-off-white);
