@@ -546,7 +546,7 @@
   color: var(--cg-gray);
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid var(--cg-charcoal);
+  border-bottom: 1px solid var(--cg-silver);
   padding: 0.5rem 0;
   width: 100%;
   outline: none;
@@ -562,7 +562,7 @@
 
 .form-input:focus,
 .form-textarea:focus {
-  border-bottom-color: var(--cg-gray);
+  border-bottom-color: var(--cg-charcoal);
 }
 
 .form-textarea {
@@ -574,29 +574,65 @@
   font-family: var(--font-body);
   font-size: var(--text-body);
   font-weight: 400;
-  letter-spacing: 0.04em;
   color: var(--cg-white);
   background-color: var(--cg-charcoal);
   border: none;
   padding: 0.9rem 2.5rem;
+  border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.2s ease;
   align-self: flex-start;
-  border-radius: 50px;
 }
 
 .form-submit:hover {
   background-color: var(--cg-black);
 }
 
-.form-success {
+.form-field-error {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: #b00020;
+  margin-top: 4px;
+  display: block;
+  min-height: 1em;
+}
+
+.form-input[aria-invalid="true"],
+.form-textarea[aria-invalid="true"] {
+  border-color: #b00020;
+}
+
+/* Formspree data-fs-success / data-fs-error — hidden until triggered */
+[data-fs-success],
+[data-fs-error] {
   display: none;
+}
+
+[data-fs-success]:not(:empty),
+[data-fs-error]:not(:empty) {
+  display: block;
+}
+
+.form-success,
+[data-fs-success] {
   padding: var(--space-md);
-  background-color: var(--cg-cream);
-  color: var(--cg-gray);
+  background-color: #d4edda;
+  color: #155724;
   font-family: var(--font-body);
   font-size: var(--text-body);
   line-height: 1.6;
+  margin-bottom: var(--space-md);
+}
+
+.form-error,
+[data-fs-error]:not([data-fs-error=""]) {
+  padding: var(--space-md);
+  background-color: #fff0f0;
+  color: #b00020;
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
 }
 
 /* ── FOOTER ── */
