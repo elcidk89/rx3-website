@@ -81,8 +81,8 @@
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 17px;
-  margin-right: 19px; /* gap to icons — matches live site */
+  gap: 28px;
+  margin-right: 28px;
 }
 
 .nav__link {
@@ -107,6 +107,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-right: -8px;
 }
 
 .nav__icon-link {
