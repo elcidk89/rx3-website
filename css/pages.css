@@ -8,7 +8,9 @@
 }
 
 .home-hero .hero__bg {
-  background-position: center bottom;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
 }
 
 .home-hero .hero__overlay {
@@ -16,16 +18,17 @@
 }
 
 .home-hero .hero__title {
-  font-size: clamp(6rem, 15vw, 14rem);
+  font-size: clamp(5rem, 11.9vw, 10.72rem);
   letter-spacing: -0.02em;
-  line-height: 0.77;
+  line-height: 1;
   text-align: center;
+  white-space: nowrap;
   margin-bottom: 0;
 }
 
 .home-hero {
-  min-height: calc(100vh - var(--nav-height));
-  padding-bottom: 4rem;
+  min-height: 100vh;
+  padding-bottom: calc(var(--nav-height) + 2rem);
 }
 
 .home-features {
