@@ -19,25 +19,20 @@
 
 .home-hero .hero__content {
   padding-inline: 0;
-  overflow: visible;
 }
 
 .home-hero .hero__title {
-  font-size: 26vw;
+  font-size: clamp(5rem, 13vw, 12rem);
   letter-spacing: -0.02em;
   line-height: 1;
-  white-space: nowrap;
-  width: 200%;
-  margin-left: -50%;
   text-align: center;
-  transform: scaleX(0.5);
-  transform-origin: center center;
+  white-space: nowrap;
   margin-bottom: 0;
 }
 
 .home-hero {
-  min-height: 75vh;
-  padding-bottom: 3rem;
+  min-height: calc(100vh - var(--nav-height));
+  padding-bottom: 4rem;
 }
 
 .home-features {
