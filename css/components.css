@@ -29,7 +29,7 @@
 }
 
 .nav--transparent .nav__icon-link {
-  border-color: var(--cg-white);
+  box-shadow: inset 0 0 0 1px var(--cg-white);
 }
 
 .nav--transparent .nav__logo img {
@@ -48,7 +48,7 @@
 }
 
 .nav.is-scrolled .nav__icon-link {
-  border-color: var(--cg-black);
+  box-shadow: inset 0 0 0 1px var(--cg-black);
 }
 
 .nav__inner {
@@ -113,7 +113,10 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  border: 1px solid var(--cg-black);
+  box-shadow: inset 0 0 0 1px var(--cg-black);
+  border-radius: 6.4px;
+  padding: 10px;
+  box-sizing: border-box;
   transition: opacity 0.2s ease;
   flex-shrink: 0;
 }
