@@ -386,24 +386,22 @@
 }
 
 /* ── GALLERY GRID ── */
+/* Base grid layout — overridden per-page in pages.css */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 12px;
 }
 
-/* First 2 items span 3 columns each (half-width, larger) */
 .gallery-grid .gallery-item:nth-child(1),
 .gallery-grid .gallery-item:nth-child(2) {
   grid-column: span 3;
 }
 
-/* Items 3–8 span 2 columns each (third-width) */
 .gallery-grid .gallery-item:nth-child(n+3) {
   grid-column: span 2;
 }
 
-/* Last 2 items span 3 columns each (half-width, matches first row) */
 .gallery-grid .gallery-item:nth-child(9),
 .gallery-grid .gallery-item:nth-child(10) {
   grid-column: span 3;
@@ -430,7 +428,6 @@
     grid-column: span 1;
   }
 }
-
 .gallery-item {
   cursor: pointer;
 }
