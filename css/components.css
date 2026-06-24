@@ -58,12 +58,14 @@
   padding-inline: var(--site-gutter);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 0;
 }
 
 .nav__logo {
   display: flex;
   align-items: center;
+  flex: 1; /* pushes links + icons to the right */
 }
 
 .nav__logo img {
@@ -76,7 +78,8 @@
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 17px;
+  margin-right: 19px; /* gap to icons — matches live site */
 }
 
 .nav__link {
