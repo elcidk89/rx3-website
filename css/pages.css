@@ -7,8 +7,32 @@
   background-image: url('../assets/images/hero-main.jpg');
 }
 
+.home-hero .hero__bg {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
 .home-hero .hero__overlay {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.home-hero .hero__content {
+  padding-inline: 0;
+}
+
+.home-hero .hero__title {
+  font-size: clamp(5rem, 16vw, 15rem);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.home-hero {
+  min-height: calc(100vh - var(--nav-height));
+  padding-bottom: 4rem;
 }
 
 .home-features {
