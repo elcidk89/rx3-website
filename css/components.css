@@ -56,7 +56,7 @@
   max-width: var(--site-max);
   margin-inline: auto;
   padding-left: 0px;
-  padding-right: var(--site-gutter);
+  padding-right: 16px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
