@@ -87,7 +87,7 @@
 
 .nav__link {
   font-family: var(--font-body);
-  font-size: 17.536px;
+  font-size: 17.728px;
   font-weight: 400;
   color: var(--cg-black);
   text-decoration: none;
@@ -321,11 +321,12 @@
   font-weight: 400;
   color: var(--cg-gray);
   margin-bottom: var(--space-md);
-  line-height: 1.15;
+  line-height: 1.03;
+  letter-spacing: -0.02em;
 }
 
 .section-body {
-  font-size: var(--text-large);
+  font-size: var(--text-body);
   color: var(--cg-charcoal);
   max-width: 700px;
   line-height: 1.7;

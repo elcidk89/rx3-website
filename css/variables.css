@@ -25,7 +25,7 @@
   /* Live: h1=171.52px, h2=119.68px, h3=76.48px — very large display sizes */
   --text-hero:    clamp(3.5rem,  9vw,  8rem);    /* ~171px at 1440 */
   --text-display: clamp(3rem,    7vw,  6.5rem);   /* ~119px at 1440 */
-  --text-h2:      clamp(2rem,    4vw,  3.5rem);   /* used for section headings */
+  --text-h2:      clamp(2rem,    5.3vw, 4.78rem);  /* ~76px at 1440 — matches live site h3/section headings */
   --text-h3:      clamp(1.5rem,  3vw,  2.5rem);   /* ~76px at 1440 */
   --text-large:   clamp(1.1rem,  1.5vw, 1.43rem); /* ~22.9px (about page body) */
   --text-body:    1rem;                            /* 16px */
